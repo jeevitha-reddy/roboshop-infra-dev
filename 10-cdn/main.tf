@@ -11,7 +11,7 @@ resource "aws_cloudfront_distribution" "devrobo" {
       origin_ssl_protocols   = ["TLSv1.2"]
     }
   }
-
+  #cloud front cacheing the data 
   # Cache behavior with precedence 0
   ordered_cache_behavior {
     path_pattern     = "/images/*"
