@@ -9,8 +9,8 @@ pipeline {
     //one job is running two builds at a time we use concurrnce
     // colours enable
     options {
-        timeout(time:1, unit: 'HOURS')
-        disableConcurrentBuilds()
+       // timeout(time:1, unit: 'HOURS')
+        // disableConcurrentBuilds()
         ansiColor('xterm')
     } 
     // accesing this value we can connect pipeline
