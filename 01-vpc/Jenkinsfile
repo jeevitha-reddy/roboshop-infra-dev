@@ -76,7 +76,9 @@ pipeline {
             }
         }
     }
-    
+     parameters {
+        choice(name: 'action', choices: ['apply', 'destroy'], description: 'Pick something')
+    }
     // post buld
     post {
         always {
