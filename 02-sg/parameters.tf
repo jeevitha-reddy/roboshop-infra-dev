@@ -64,7 +64,7 @@ resource "aws_ssm_parameter" "web_sg_id" {
   value = module .web.sg_id
 }
 
-#app_alb security group enable
+#import app_alb security group enable
 resource "aws_ssm_parameter" "app_alb_sg_id" {
   name = "/${var.project_name}/${var.environment}/app_alb_sg_id"
   type =  "String"
